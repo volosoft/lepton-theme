@@ -92,7 +92,7 @@ To add `LeptonX` into your existing projects,
 
 * Then, edit `angular.json` as follows:
 
-Remove the following config from the `styles` array since LeptonX provides bootstrap as embedded in its css.
+Remove the following config from the `styles` array since LeptonX provides bootstrap as embedded in its CSS.
 
 ```JSON
 {
@@ -171,7 +171,7 @@ import { AccountLayoutModule } from '@volosoft/abp.ng.theme.lepton-x/account';
 export class AppModule {}
 ```
 
-`authLayoutImg`: (Optional) If not given, a default image will be placed into the authentication pages.
+`authLayoutImg`: (Optional) If not given, a default image will be placed on the authentication pages.
 
 
 * At this point, `LeptonX` theme should be up and running within your application. However, you may need to overwrite some css variables based your needs for every theme available as follows:

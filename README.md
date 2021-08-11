@@ -29,7 +29,7 @@ with
 "node_modules/bootstrap-icons/font/bootstrap-icons.css",
 ```
 
-* Finally, remove `ThemeBasicModule` and import the related modules in `app.module.ts`
+* Finally, remove `ThemeBasicModule` from `app.module.ts` and `shared.module.ts`, and import the related modules in `app.module.ts`
 
 ```js
 import { ThemeLeptonXModule } from '@abp/ng.theme.lepton-x';
@@ -130,7 +130,7 @@ The fourth one depends on which layout you want to use. For now, there is only `
 
 The last one is `bootstrap-icons` which are being used throughout the components. 
 
-* At last, remove `ThemeLeptonModule` and import the following modules in `app.module.ts`
+* At last, remove `ThemeLeptonModule` from `app.module.ts` and `shared.module.ts`, and import the following modules in `app.module.ts`
 
 ```js
 import { ThemeLeptonXModule } from '@volosoft/abp.ng.theme.lepton-x';

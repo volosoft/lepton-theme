@@ -6,16 +6,15 @@ To add `LeptonX-lite` into your project,
 
 * Install `@abp/ng.theme.lepton-x`
 
-`npm install @abp/ng.theme.lepton-x@1.0.0-beta.1` or 
+`npm install @abp/ng.theme.lepton-x@preview` or 
 
-`yarn add @abp/ng.theme.lepton-x@1.0.0-beta.1`
+`yarn add @abp/ng.theme.lepton-x@preview`
 
 * Then, we need to edit the styles array in `angular.json` to replace the existing style with the new one.
 
 Add the following style 
 
 ```json
-"node_modules/@volo/ngx-lepton-x.lite/styles/sidemenu-layout.min.css",
 "node_modules/bootstrap-icons/font/bootstrap-icons.css",
 ```
 
@@ -76,9 +75,9 @@ To add `LeptonX` into your existing projects,
 
 * Firstly, install `@volosoft/abp.ng.theme.lepton-x`
 
-`npm install @volosoft/abp.ng.theme.lepton-x@1.0.0-beta.1` or 
+`npm install @volosoft/abp.ng.theme.lepton-x@preview` or 
 
-`yarn add @volosoft/abp.ng.theme.lepton-x@1.0.0-beta.1`
+`yarn add @volosoft/abp.ng.theme.lepton-x@preview`
 
 * Then, edit `angular.json` as follows:
 
@@ -95,7 +94,6 @@ Remove the following config from the `styles` array since LeptonX provides boots
 Add the following ones into the `styles` array
 
 ```JSON
-"node_modules/@volosoft/ngx-lepton-x/styles/css/sidemenu-layout.min.css",
 "node_modules/bootstrap-icons/font/bootstrap-icons.css",
 ```
 

@@ -6,23 +6,13 @@ To add `LeptonX-lite` into your project,
 
 * Install `@abp/ng.theme.lepton-x`
 
-`npm install @abp/ng.theme.lepton-x@preview` or 
+`npm install @abp/ng.theme.lepton-x@1.0.0-beta.1` or 
 
-`yarn add @abp/ng.theme.lepton-x@preview`
+`yarn add @abp/ng.theme.lepton-x@1.0.0-beta.1`
 
 * Then, we need to edit the styles array in `angular.json` to replace the existing style with the new one.
 
-Replace the following style 
-
-```JSON
-{
-  "input": "node_modules/bootstrap/dist/css/bootstrap.min.css",
-  "inject": true,
-  "bundleName": "bootstrap-ltr.min"
-},
-```
-
-with 
+Add the following style 
 
 ```json
 "node_modules/@volo/ngx-lepton-x.lite/styles/sidemenu-layout.min.css",
@@ -86,9 +76,9 @@ To add `LeptonX` into your existing projects,
 
 * Firstly, install `@volosoft/abp.ng.theme.lepton-x`
 
-`npm install @volosoft/abp.ng.theme.lepton-x@preview` or 
+`npm install @volosoft/abp.ng.theme.lepton-x@1.0.0-beta.1` or 
 
-`yarn add @volosoft/abp.ng.theme.lepton-x@preview`
+`yarn add @volosoft/abp.ng.theme.lepton-x@1.0.0-beta.1`
 
 * Then, edit `angular.json` as follows:
 
@@ -105,21 +95,6 @@ Remove the following config from the `styles` array since LeptonX provides boots
 Add the following ones into the `styles` array
 
 ```JSON
-{
-  "input": "node_modules/@volosoft/ngx-lepton-x/styles/themes/dark.css",
-  "inject": false,
-  "bundleName": "lepton-x.dark"
-},
-{
-  "input": "node_modules/@volosoft/ngx-lepton-x/styles/themes/dim.css",
-  "inject": false,
-  "bundleName": "lepton-x.dim"
-},
-{
-  "input": "node_modules/@volosoft/ngx-lepton-x/styles/themes/light.css",
-  "inject": false,
-  "bundleName": "lepton-x.light"
-},
 "node_modules/@volosoft/ngx-lepton-x/styles/css/sidemenu-layout.min.css",
 "node_modules/bootstrap-icons/font/bootstrap-icons.css",
 ```
@@ -134,7 +109,7 @@ The last one is `bootstrap-icons` which are being used throughout the components
 
 ```js
 import { ThemeLeptonXModule } from '@volosoft/abp.ng.theme.lepton-x';
-import { AbpSideMenuLayoutModule } from '@volosoft/abp.ng.theme.lepton-x/layouts';
+import { SideMenuLayoutModule } from '@volosoft/abp.ng.theme.lepton-x/layouts';
 
 @NgModule({
   // ...
@@ -142,7 +117,7 @@ import { AbpSideMenuLayoutModule } from '@volosoft/abp.ng.theme.lepton-x/layouts
     // ...
     // ThemeLeptonModule.forRoot(),
     ThemeLeptonXModule.forRoot(),
-    AbpSideMenuLayoutModule.forRoot(), // depends on which layout you choose
+    SideMenuLayoutModule.forRoot(), // depends on which layout you choose
     // ...
   ],
   // ...
@@ -197,3 +172,4 @@ export class AppModule {}
   }
 }
 ```
+If everything is ok, you can remove the `@volo/abp.ng.theme.lepton` in package.json
